@@ -6,8 +6,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
      <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-     <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilo.css">
+     <link rel="stylesheet" href="node_modules/bootstrap/compiladoCss/bootstrap.css">
+     <link rel="stylesheet" href="node_modules/bootstrap/compiladoCss/estilo.css">
 
      <!-- jQuery, Popper.js, Bootstrap JS -->
      <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -16,45 +16,220 @@
 
      <title>Cat!Page</title>
 
-  </head>
+    </head>
 
-  <body>
+    <body>
 
-        <div class="container">
+        <header class="cabecalho">
+            <div class="container" id="Navcontainer">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                
-                <a class="navbar-brand" href="#">Cat!Page</a>
-                
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSite">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <nav class="site-nav navbar navbar-expand-lg navbar-dark ">
 
-                <div class="collapse navbar-collapse" id="navbarSite">
+                    <a class="navbar-brand" href="#">
+                        <img src="Imagens/halloween-black-cat1.svg" alt="logo de silhueta de um gato" class="logo">
+                        Cat!Page
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navSite">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <ul class="navbar-nav ml-auto">
+                    <div class="collapse navbar-collapse" id="navSite">
+                        <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#">The Best</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">All You Need</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Energy saving</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+                            <li class="nav-item active">
+                                <a class="nav-link " href="#">The Best</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">All You Need</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Energy saving</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+            
+                        </ul> 
+                    </div>
+                </nav>
 
-                    </ul> 
+            </div>
 
+            <div id="carouselCat" class="site-carousel carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="Imagens/gato-no-banco1.jpg" alt="fundo da imagem preto. imagenm de um gato de pelos amarelos. frase ao lado do gato"/>
+                        <div class="carousel-caption d-none d-md-block text-left">
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+     
+        </header>
+
+        <!--inicio do corpo da página-->
+        <section class="corpo container my-5">
+
+            <div class="row my-5">
+
+                <div class="col col-sm col-md-6">
+                    <div class="text text-justify mt-4">
+                        <article>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+                            </p>
+                            <p>
+                                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            <p>
+                                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+              
+                <div class="col col-sm col-md-6 ">
+                            
+                    <form class="formulario px-5">
+                        <div class="leg-form justify-content-left ml-auto ml-5">
+                            <legend>Dados Pessoais</legend>
+                        </div>
+                            <div class="form-group">
+                                <label for="inputNome">Nome</label>
+                                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNumero">telefone</label>
+                                <input type="tel" class="form-control" id="inputNumero" placeholder="Digite seu numero">
+                            </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email">
+                                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                                  </div>
+                                  <button type="submit" class="botao botFor btn btn-default ">Enviar</button>
+              
+                            </form>
+                        </div>
+                      
+                      </div>
+              
+
+            <div class="meio-1">
+                <h2 class=" text-center my-4">Cats are the Best
+                    <img src="Imagens/icon (1).svg"  class="logo">
+                </h2>
+                <div class="card-deck">
+                        
+                    <div class="card"> 
+                        <img src="imagens/(1)adoravel-animal-animal-de-estimacao-208984.jpg" class="img-fluid" alt=""/>
+                        <p class="card-text p-2">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+                    </div>
+
+                    <div class="card"> <img src="imagens/acasalar-adoravel-animado-1663415.jpg" class="img-fluid" alt=""/>
+                        <p class="card-text p-2">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+                    </div>
+
+                    <div class="card"> <img src="imagens/aadoravel-animal-animal-de-estimacao-1741205.jpg " class="img-fluid" alt=""/>
+                        <p class="card-text p-2">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="meio-2 my-5">
+                    <h2 class=" text-center my-4">All you need is cat
+                        <img src="Imagens/icon (1).svg"  class="logo">
+                    </h2>
+
+                    <div class="media my-5 "> <!--imagen a esquerda-->
+                        <img class="align-self-center mr-4 img-fluid car-img car-1" src="Imagens/2adoravel-animal-animal-de-estimacao-982299.jpg" alt="gato de pelos e olhos claros">
+                        <div class="media-body">
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                          <p class="mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                        </div>
+                    </div>
+                    <div class="media my-5"><!--imagen a direita-->
+                        <div class="media-body">
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <p class="mb-2">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <img class="align-self-center ml-3 car-img car-2" src="Imagens/3animal-animal-de-estimacao-bicho-1311572.jpg" alt="gato de olhos azuis">
+                    </div>
+                    <div class="media my-5"><!--imagen a esquerda-->
+                        <img class="align-self-center mr-3 image-fluid car-img car-1" src="Imagens/4adoravel-animal-animal-de-estimacao-1170986.jpg" alt="gato de pelos amarelos olhando para frente">
+                        <div class="media-body">
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <p class="mb-2">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                    </div>
+                    <div class="media my-5"><!--imagen a direita-->
+                        <div class="media-body">
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <p class="mb-2">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <img class="align-self-center ml-3 car-img car-2" src="Imagens/adoravel-animal-animal-de-estimacao-733105.jpg" alt="gatinho dentro de cestta olhando para baixo">
+                          <div class="box-orange"></div>
+                       </img>
+                    </div>
                 </div>
 
-            </nav>
+            </section> 
+
+            <div class="footer">
+
+                    <div class="jumbotron" class="img-fluid" style="background-image: url(Imagens/5animais-de-estimacao-animais-domesticos-animais-fofinhos-1084425.jpg); background-size: 100%;">
+                        <div class="container for-about">
+                          <h1>you can teach a cat to do<br>anything...that it wants to do</h1>
+                          <button type="submit" class="botao foot-2 btn btn-default">Contact Us</button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class=" text-center my-4">Cats are not lazy, they are just in the energy saving mode
+                            <img src="Imagens/icon (1).svg"  class="logo">
+                        </h2>
+                        <p>
+                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
+                        </p>
+                        <p class="mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have </p>
+                    </div>
+            
+                    <div class="card rodape">
+                        <div class="card-body d-flex justify-content-between">
+                          <div>
+                            <ul>
+                               <li><a href="#">The Best</a></li>
+                               <li><a href="#" >All You Need</a></li>
+                               <li><a href="#">Saving Energy</a></li>
+                            </ul>
+                            <button type="submit" class="botao foot-2 btn btn-default">Contact Us</button>
+                          </div>
+                          <div class="justify-content-center"> 
+                             <img src="Imagens/halloween-black-cat1.svg" alt="logo de silhueta de um gato" class="logo">
+                              <p class="p-foot">Cat!Page</p>
+                              <ul>
+                                    <li><a href="#">Meow Avenue</a></li>
+                                    <li><a href="#" >00000-0000</a></li>
+                                    <li><a href="#">xloucxdosgatos@email.com</a></li>
+                              </ul>
+                          </div>
+                          <div>kk</div>
+                        </div>
+                        <div class="card seg">
+                            Appi9 software Ltda copyright &copy 2019
+                        </div>
+                      </div>
+                </div>
         
-        </div>
 
         
-  </body>
+    </body>
 </html>
